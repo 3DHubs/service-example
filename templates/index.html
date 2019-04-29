@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="Example Flask App">
+    <head>
+        <title>Example Flask App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body ng-controller="AppController">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center my-5">
+                        <h1 class='example example__loading'>Loading...</h1>
+                        <a href="https://3dhubs.com/" class="mx-auto">
+                            <svg height="120" width="345" viewBox="0 0 104 32">
+                                <title>Go to 3D Hubs homepage</title>
+                                <use xlink:href="{{ url_for('static',
+                                    filename='logo.svg') }}#Artboard" x="0" y="0"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- scripts -->
+    <script src="{{ url_for('static', filename='jquery-3.4.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</html>

@@ -1,0 +1,7 @@
+.container {
+  max-width: 1000px;
+}
+
+.example__loading {
+    color: gray;
+}
